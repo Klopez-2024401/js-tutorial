@@ -35,5 +35,25 @@ const resultado = 0.1 + 0.2 // resultado = 0.3
 //console.log(resultado.toFixed(1))
 //console.log(resultado.toFixed(1) == 0.3) // false
 
+//OPERACIONES AVANZADAS
+const raizCuadrada = Math.sqrt(16)
+const valorAbsoluto = Math.abs(-7)
+const aleatorio = Math.trunc(Math.random()*20+5)
+//console.log(raizCuadrada)
+//console.log(valorAbsoluto)
+//console.log(aleatorio)
+
+// Lenguajes de programación
+
+                            //Runtime Exception
+
+//Compilados: java (JVM -> .java _-_> .class). C, C++
+//Interpretados: javascript --> lee>ejecuta
+
+const numero = 2
+const boolean = true
+//Conversión implicita
+console.log(numero+boolean)
+
 
 
