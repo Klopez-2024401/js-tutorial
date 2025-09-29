@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Ahorcado Básico</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      background-color: #FFF9C4; 
+      margin: 0;
+      padding: 20px;
+    }
+    #palabra { font-size: 2rem; letter-spacing: 10px; margin: 20px 0; }
+    #letras button { margin: 2px; padding: 10px; font-size: 1rem; cursor: pointer; }
+    #mensaje { font-size: 1.5rem; margin-top: 20px; font-weight: bold; }
+    canvas { border: 1px solid black; margin-top: 20px; background-color: #FFFDE7; } 
+    button { padding: 10px 20px; font-size: 1rem; cursor: pointer; margin-top: 15px; }
+  </style>
 </head>
 <body>
-    <p>Hola mundo estoy de nuevo en js</p>
-    <script src="horcado.js"></script>
+  <h1>Juego del Ahorcado</h1>
+
+  <canvas id="canvas" width="200" height="200"></canvas>
+  
+  <div id="palabra"></div>
+  <div id="letras"></div>
+  <div id="intentos"></div>
+  <div id="mensaje"></div>
+  
+  <button onclick="iniciarJuego()">Nuevo Juego</button>
+
+  <script src="horcado.js"></script>
 </body>
 </html>
